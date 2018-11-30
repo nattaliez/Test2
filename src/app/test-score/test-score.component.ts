@@ -12,16 +12,21 @@ import { ToastService } from '../toast/toast.service';
 })
 export class TestScoreComponent implements OnInit {
 
-  tests: Array<any> = [];
+  tests: Array<IContact> = [];
+  params: string;
   constructor(
     private http: Http,
     private activatedRoute: ActivatedRoute,
     private router: Router,
     private toastService: ToastService
-  ) { }
-
-  async ngOnInit() {
-
+  ) {    
   }
 
+  async ngOnInit() {
+    this.contacts = await this.loadContacts();
+  }
+
+}
+async loadContacts() {
+  let contacts = JSON.parse(localStorage.getItem('contacts'));
 }

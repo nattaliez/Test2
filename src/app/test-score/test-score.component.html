@@ -9,7 +9,7 @@
     <button mat-raised-button color="primary">Add Test</button>
   </li>
   <li class="nav-item">
-    <button mat-raised-button color="primary">Compute Grade</button>
+    <button mat-raised-button color="primary" (click)="loadContacts()">Compute Grade</button>
   </li>
 </ul>
 
@@ -20,11 +20,6 @@
         <p>
           <label for="id">ID:</label>
           <input type="text" class="form-control" placeholder="ID" aria-label="id">
-        </p>
-        <p>
-          <label for="first">Test Name:</label>
-          <input type="text" class="form-control" placeholder="Test Name" aria-label="test name"
-            aria-describedby="basic-addon1">
         </p>
         <p>
           <label for="email">Points Possible</label>

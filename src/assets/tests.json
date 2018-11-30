@@ -1,6 +1,5 @@
 [{
     "id": 1,
-    "testName": "Test 1",
     "pointsPossible": 100,
     "pointsReceived": 80,
     "percentage": 0.8,
@@ -8,7 +7,6 @@
   },
   {
     "id": 2,
-    "testName": "Test 2",
     "pointsPossible": 100,
     "pointsReceived": 70,
     "percentage": 0.7,
@@ -16,7 +14,6 @@
   },
   {
     "id": 3,
-    "testName": "Final Exam",
     "pointsPossible": 250,
     "pointsReceived": 200,
     "percentage": 0.8,
